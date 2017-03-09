@@ -58,21 +58,6 @@ class ViewController: UIViewController {
             print("tie")
         
         }
-        /*
-        if(player == .scissors){
-            
-            switch(MoveType(rawValue: aiRoll)){
-                
-            case MoveType.rock:
-                    print("Ai Wins")
-            case MoveType.paper:
-                    print("Player wins")
-            case MoveType.scissors:
-                    print("tie")
-            
-                        }
-                }
-        */
     }
     
 
