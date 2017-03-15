@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40E3F4C21E71DCB10043F3B5 /* MoveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3F4C11E71DCB10043F3B5 /* MoveViewController.swift */; };
+		40E3F4C41E7929A80043F3B5 /* RockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E3F4C31E7929A80043F3B5 /* RockController.swift */; };
 		40EEB1B91E69FB7C002C61DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EEB1B81E69FB7C002C61DD /* AppDelegate.swift */; };
 		40EEB1BB1E69FB7C002C61DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EEB1BA1E69FB7C002C61DD /* ViewController.swift */; };
 		40EEB1BE1E69FB7C002C61DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40EEB1BC1E69FB7C002C61DD /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40E3F4C11E71DCB10043F3B5 /* MoveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveViewController.swift; sourceTree = "<group>"; };
+		40E3F4C31E7929A80043F3B5 /* RockController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RockController.swift; sourceTree = "<group>"; };
 		40EEB1B51E69FB7C002C61DD /* RockPaperScissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40EEB1B81E69FB7C002C61DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40EEB1BA1E69FB7C002C61DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				40EEB1BF1E69FB7C002C61DD /* Assets.xcassets */,
 				40EEB1C11E69FB7C002C61DD /* LaunchScreen.storyboard */,
 				40EEB1C41E69FB7C002C61DD /* Info.plist */,
+				40E3F4C11E71DCB10043F3B5 /* MoveViewController.swift */,
+				40E3F4C31E7929A80043F3B5 /* RockController.swift */,
 			);
 			path = RockPaperScissors;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			files = (
 				40EEB1BB1E69FB7C002C61DD /* ViewController.swift in Sources */,
 				40EEB1B91E69FB7C002C61DD /* AppDelegate.swift in Sources */,
+				40E3F4C41E7929A80043F3B5 /* RockController.swift in Sources */,
+				40E3F4C21E71DCB10043F3B5 /* MoveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +307,7 @@
 				40EEB1C91E69FB7C002C61DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -25,11 +25,17 @@
                                 <rect key="frame" x="147" y="132" width="74" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="paper"/>
+                                <connections>
+                                    <segue destination="y5h-8i-Zex" kind="show" identifier="paperSegue" id="yqj-Uq-MG2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdQ-zn-4bZ" userLabel="RockButton">
                                 <rect key="frame" x="74" y="301" width="75" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="rock"/>
+                                <connections>
+                                    <segue destination="aAW-or-qQg" kind="modal" id="UQH-lj-oGy"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's Play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdG-zH-tLR">
                                 <rect key="frame" x="151" y="521" width="73" height="21"/>
@@ -54,6 +60,92 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+        <!--Rock Controller-->
+        <scene sceneID="Ve3-63-6BA">
+            <objects>
+                <viewController id="aAW-or-qQg" customClass="RockController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pkS-5G-NPM"/>
+                        <viewControllerLayoutGuide type="bottom" id="vIF-jy-GF5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AoN-hr-HmR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TOD-qT-j6n" userLabel="Move Image">
+                                <rect key="frame" x="66" y="142" width="242" height="248"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u48-a2-Ii1" userLabel="Play Again">
+                                <rect key="frame" x="150" y="541" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play Again"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="tb2-Ey-oOg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rb8-gm-lRn" userLabel="Outcome Label">
+                                <rect key="frame" x="165" y="485" width="44" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="TOD-qT-j6n" id="GA6-q5-kMg"/>
+                        <outlet property="outcomeLabel" destination="rb8-gm-lRn" id="0cw-Vb-zQc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gsH-bS-72A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805.60000000000002" y="-552.77361319340332"/>
+        </scene>
+        <!--Move View Controller-->
+        <scene sceneID="HDT-VP-F6T">
+            <objects>
+                <viewController storyboardIdentifier="MoveViewController" id="y5h-8i-Zex" customClass="MoveViewController" customModule="RockPaperScissors" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YIR-2F-J6h"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ah5-E4-iGv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4yq-9f-J42">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uXt-M9-zF6">
+                                <rect key="frame" x="67" y="153" width="242" height="248"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmj-Ut-G3Q" userLabel="OutcomeLabel">
+                                <rect key="frame" x="167" y="486" width="43" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ve-lc-D4N">
+                                <rect key="frame" x="153" y="563" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play Again"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="y5h-8i-Zex" eventType="touchUpInside" id="Hmx-AX-acn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="moveImage" destination="uXt-M9-zF6" id="wjz-kQ-7RV"/>
+                        <outlet property="outcomeLabel" destination="Gmj-Ut-G3Q" id="bCo-pN-W9m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QMe-GI-LYN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063" y="137"/>
         </scene>
     </scenes>
     <resources>
